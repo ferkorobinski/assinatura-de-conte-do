@@ -1,8 +1,28 @@
-: root [
+: root [--fonte-principal: 'Inter';
      --branco-principal: #FFFFFF;
      --cinza-secundario: #C0C0C0;
      --botão-azul: #167BF7;
      --cor-de-fundo: #00030C;
+Na classe body, insira a estilização de tamanho de fonte que será usada
+
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+
+Na classe .principal vamos deixar todos os itens e textos centralizados
+
+ align-items: center;
+    text-align: center;
+
+Já na classe .container vamos utilizar um estilo para linhas e colunas, porque assim será nosso site e organizar nosso template em 2 colunas
+
+ display: grid;
+ grid-template-columns: 50% 50%;
+
+Complementar a classe container__botao definindo um espaço entre os elementos da classe
+
+  text-decoration: none;    margin-bottom: 1em;
+
 ]
 
 body [
